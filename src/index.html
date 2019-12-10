@@ -19,13 +19,14 @@
         </div>
 
     <script>
+      let arr = [3,1,6,8,4,9,2,5,7];
+                
                 const bubbleSort = () => {
-                 let arr = [3,1,6,8,4,9,2,5,7];
                  
-                 let wall = arr.length - 1; //end of array//
+                  let wall = arr.length - 1; //end of array//
                     while (wall > 0){
                         let index = 0;
-                            while (0 < wall) {
+                            while (index < wall) {
                                 if (arr[index] > arr[index + 1]) { 
                                     let aux = arr[index]; 
                                     arr[index] = arr[index + 1];
